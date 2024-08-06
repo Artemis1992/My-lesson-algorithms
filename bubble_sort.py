@@ -5,9 +5,9 @@ print(ppp)
 
 def bubble_sort(arr):
     n = len(arr) # Получаем длину массива
-    for index in range(n): # Проходим по всему массиву
+    for i in range(n): # Проходим по всему массиву
         swapped = False # Переменная, чтобы проверить, был ли произведен обмен в этом проходе
-        for j in range(0, n-index-1): # Проходим по массиву от 0 до n-i-1
+        for j in range(0, n-i-1): # Проходим по массиву от 0 до n-i-1
             if arr[j] > arr[j+1]: # Если текущий элемент больше следующего
                 arr[j], arr[j+1] = arr[j+1], arr[j] # Меняем их местами
                 swapped = True  # Устанавливаем swapped в True, так как произошел обмен
